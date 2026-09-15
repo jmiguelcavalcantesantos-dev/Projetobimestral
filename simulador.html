@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Invest+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Invest+</h1>
+
+    <p>
+        <a href="index.html">Início</a> |
+        <a href="investimentos.html">Investimentos</a> |
+        <a href="mercado.html">Mercado de Trabalho</a> |
+        <a href="simulador.html">Simulador</a>
+    </p>
+
+    <hr>
+
+    <h2>Simulador</h2>
+
+    <p>
+        Clique no botão para calcular uma simulação.
+    </p>
+
+    <button onclick="
+        let valor = Number(prompt('Valor inicial:'));
+        let aporte = Number(prompt('Aporte mensal:'));
+        let taxa = Number(prompt('Taxa mensal (%):'));
+        let meses = Number(prompt('Quantidade de meses:'));
+
+        let total = valor;
+        let i = 0;
+
+        while (i < meses) {
+            total = total + total * taxa / 100;
+            total = total + aporte;
+            i = i + 1;
+        }
+
+        let investido = valor + aporte * meses;
+        let rendimento = total - investido;
+
+        alert(
+            'Valor final: R$ ' + total.toFixed(2) +
+            '\\nValor investido: R$ ' + investido.toFixed(2) +
+            '\\nRendimento: R$ ' + rendimento.toFixed(2)
+        );
+    ">
+        Calcular
+    </button>
+
+    <h2>O que ele faz?</h2>
+
+    <p>
+        Calcula uma simulação de juros compostos
+        com um valor inicial e aportes mensais.
+    </p>
+
+    <hr>
+
+    <p>Invest+ - Conhecimento para o seu futuro.</p>
+
+</body>
+</html>
