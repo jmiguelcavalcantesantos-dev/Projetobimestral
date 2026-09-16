@@ -20,44 +20,56 @@
 
     <hr>
 
-    <h2>Simulador</h2>
+    <h2>Simulador de Juros Compostos</h2>
 
     <p>
-        Clique no botão para calcular uma simulação.
+        Os juros compostos são uma forma de rendimento em que os
+        juros acumulados também passam a render ao longo do tempo.
     </p>
 
-    <button onclick="
-        let valor = Number(prompt('Valor inicial:'));
-        let aporte = Number(prompt('Aporte mensal:'));
-        let taxa = Number(prompt('Taxa mensal (%):'));
-        let meses = Number(prompt('Quantidade de meses:'));
+    <p>
+        Como este projeto foi desenvolvido somente com HTML e CSS,
+        apresentamos abaixo um exemplo de simulação para ajudar
+        a entender como funciona.
+    </p>
 
-        let total = valor;
-        let i = 0;
-
-        while (i < meses) {
-            total = total + total * taxa / 100;
-            total = total + aporte;
-            i = i + 1;
-        }
-
-        let investido = valor + aporte * meses;
-        let rendimento = total - investido;
-
-        alert(
-            'Valor final: R$ ' + total.toFixed(2) +
-            '\\nValor investido: R$ ' + investido.toFixed(2) +
-            '\\nRendimento: R$ ' + rendimento.toFixed(2)
-        );
-    ">
-        Calcular
-    </button>
-
-    <h2>O que ele faz?</h2>
+    <h2>Exemplo</h2>
 
     <p>
-        Calcula uma simulação de juros compostos
-        com um valor inicial e aportes mensais.
+        Valor inicial: R$ 1.000
+    </p>
+
+    <p>
+        Aporte mensal: R$ 100
+    </p>
+
+    <p>
+        Taxa mensal: 1%
+    </p>
+
+    <p>
+        Período: 12 meses
+    </p>
+
+    <h2>Resultado aproximado</h2>
+
+    <p>
+        Ao final dos 12 meses, o valor será aproximadamente
+        R$ 2.365,22.
+    </p>
+
+    <p>
+        Nesse exemplo, foram colocados R$ 2.200 no total,
+        considerando o valor inicial e os aportes mensais.
+        O restante corresponde ao rendimento da simulação.
+    </p>
+
+    <h2>Importante</h2>
+
+    <p>
+        Este exemplo possui finalidade educativa e serve apenas
+        para mostrar como os juros compostos podem funcionar.
+        Os resultados de investimentos reais podem ser diferentes.
     </p>
 
     <hr>
@@ -65,4 +77,5 @@
     <p>Invest+ - Conhecimento para o seu futuro.</p>
 
 </body>
+
 </html>
