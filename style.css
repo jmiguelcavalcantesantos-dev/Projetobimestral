@@ -59,6 +59,14 @@ p {
     line-height: 1.6;
 }
 
+img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
 .caixas {
     display: flex;
     justify-content: space-between;
@@ -78,9 +86,17 @@ p {
     background-color: #d5e8da;
 }
 
+a {
+    color: #176b3a;
+}
+
 footer {
     background-color: #176b3a;
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+footer a {
+    color: white;
 }
