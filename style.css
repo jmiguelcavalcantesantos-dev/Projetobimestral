@@ -50,9 +50,32 @@ h2 {
     color: #176b3a;
 }
 
+h3 {
+    color: #245c3a;
+}
+
 p {
     font-size: 16px;
     line-height: 1.6;
+}
+
+.caixas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.caixas div {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #e6f1e9;
+    border-radius: 10px;
+}
+
+.caixas div:hover {
+    background-color: #d5e8da;
 }
 
 footer {
