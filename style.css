@@ -29,6 +29,10 @@ nav a {
     padding: 10px 15px;
 }
 
+nav a:hover {
+    background-color: #0f4d2a;
+}
+
 main {
     max-width: 1000px;
     margin: auto;
