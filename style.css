@@ -27,6 +27,7 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
+    border-radius: 5px;
 }
 
 nav a:hover {
@@ -57,6 +58,10 @@ h3 {
 p {
     font-size: 16px;
     line-height: 1.6;
+}
+
+ul {
+    line-height: 1.8;
 }
 
 img {
