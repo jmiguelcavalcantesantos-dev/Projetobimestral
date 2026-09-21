@@ -1,102 +1,59 @@
 body {
-font-family: Arial;
-margin: 0;
-background-color: #f2f7f3;
-color: #222222;
+    font-family: Arial;
+    margin: 0;
+    background-color: #f2f7f3;
+    color: #222222;
 }
 
 header {
-background-color: #176b3a;
-padding: 25px;
-text-align: center;
+    background-color: #176b3a;
+    padding: 25px;
+    text-align: center;
 }
 
 header h1 {
-color: white;
-margin: 0 0 20px 0;
+    color: white;
+    margin: 0 0 20px 0;
 }
 
 nav {
-display: flex;
-justify-content: center;
-gap: 10px;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 nav a {
-color: white;
-text-decoration: none;
-padding: 10px 15px;
-}
-
-nav a:hover {
-background-color: #0f4d2a;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
 }
 
 main {
-max-width: 1000px;
-margin: auto;
-padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
 }
 
 section {
-background-color: white;
-padding: 25px;
-margin-bottom: 20px;
-border-radius: 10px;
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 h2 {
-color: #176b3a;
-}
-
-h3 {
-color: #245c3a;
+    color: #176b3a;
 }
 
 p {
-font-size: 16px;
-line-height: 1.6;
-}
-
-img {
-width: 100%;
-max-width: 700px;
-display: block;
-margin: 20px auto;
-border-radius: 10px;
-}
-
-.caixas {
-display: flex;
-justify-content: space-between;
-gap: 20px;
-flex-wrap: wrap;
-}
-
-.caixas div {
-flex: 1;
-min-width: 200px;
-padding: 20px;
-background-color: #e6f1e9;
-border-radius: 10px;
-}
-
-.caixas div:hover {
-transform: translateY(-3px);
-}
-
-a {
-color: #176b3a;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 footer {
-background-color: #176b3a;
-color: white;
-padding: 20px;
-text-align: center;
-}
-
-footer a {
-color: white;
+    background-color: #176b3a;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
